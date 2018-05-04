@@ -2,26 +2,26 @@ trigger AccountTrigger on Account (before insert, after insert, before update, a
 	if(!AccountTriggerHandler.manualSkip){
 		//Before Insert
 		if(Trigger.isBefore && Trigger.isInsert) {
-			AccountTriggerHandler.setOwner(Trigger.new);
+		AccountTriggerHandler.setOwner(Trigger.new);
 		}
-		
-        //After Insert 
+
+		//After Insert 
 		else if(Trigger.isAfter && Trigger.isInsert) {
 		}
-        
+
 		//Before Update
 		else if(Trigger.isBefore && Trigger.isUpdate) {
 		}
-		
-        //After Update
+
+		//After Update
 		else if(Trigger.isAfter && Trigger.isUpdate) {
 		}
-		
-        //Before Delete
+
+		//Before Delete
 		else if(Trigger.isBefore && Trigger.isDelete) {
 		}
-		
-        //After Delete 
+
+		//After Delete 
 		else if(Trigger.isAfter && Trigger.isDelete) {
 		}
 	}
